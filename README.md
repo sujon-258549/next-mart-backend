@@ -1,6 +1,5 @@
 # NextMart - Server
 
-
 NextMart is a robust and scalable backend solution for an e-commerce platform. It handles user authentication, product management, order processing, payment integration, and more. Built with Node.js, Express.js, and MongoDB, this project is designed for high performance and flexibility.
 
 ---
@@ -29,12 +28,14 @@ Follow the steps below to set up and run the project locally:
 ### Steps
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Apollo-Level2-Web-Dev/NextMert-Server.git
    cd NextMert-Server
    ```
 
 2. Install dependencies:
+
    ```bash
    yarn install
    # or
@@ -44,6 +45,7 @@ Follow the steps below to set up and run the project locally:
 3. Create a `.env` file in the root directory and configure the environment variables as shown below.
 
 4. Run the development server:
+
    ```bash
    yarn dev
    # or
@@ -105,15 +107,15 @@ CANCEL_URL="<your_cancel_url>"
 
 ## Scripts
 
-- **Start Development Server**: 
+- **Start Development Server**:
   ```bash
   yarn dev
   ```
-- **Build Production**: 
+- **Build Production**:
   ```bash
   yarn build
   ```
-- **Run in Production Mode**: 
+- **Run in Production Mode**:
   ```bash
   yarn start
   ```
@@ -126,3 +128,55 @@ CANCEL_URL="<your_cancel_url>"
 
 **NextMart** is a single-vendor e-commerce platform. This repository contains the server-side implementation, providing robust backend services and APIs to power the platform.
 
+<!-- my data -->
+
+# Environment
+
+NODE_ENV=development
+
+# Port
+
+PORT=3001
+
+# Database URL
+
+# DB_URL="mongodb+srv://assignment-2:MwqP2NeVQVhRIP79@cluster0.yx0jx.mongodb.net/assignment2?retryWrites=true&w=majority&appName=Cluster0"
+
+DB_URL="mongodb+srv://next-mart:nextmart@cluster0.yx0jx.mongodb.net/nextmart?retryWrites=true&w=majority&appName=Cluster0"
+
+# Bcrypt Salt Rounds
+
+BCRYPT_SALT_ROUNDS=12
+
+# JWT Secrets and Expiry
+
+JWT_ACCESS_SECRET="a1b2c3d4e5f67890abcdef1234567890"
+JWT_ACCESS_EXPIRES_IN=7d
+JWT_REFRESH_SECRET="f4d3a9b8c7e6f5d4e3c2b1a0987654321abcdef1234567890abcdef123456789"
+JWT_REFRESH_EXPIRES_IN=1y
+JWT_OTP_SECRET="a1b2c3d4e5f67890abcdef1234567890"
+JWT_PASS_RESET_SECRET="a1b2c3d4e5f67890abcdef1234567890"
+JWT_PASS_RESET_EXPIRES_IN=15m
+
+# Cloudinary Credentials
+
+CLOUDINARY_CLOUD_NAME="dkdibsanz"
+CLOUDINARY_API_KEY="558721645753651"
+CLOUDINARY_API_SECRET="Ky5Ga3DuiaRU77goqQem_bEdWQU"
+
+# Email Configuration
+
+SENDER_EMAIL="mdsujon258549@gmail.com"
+SENDER_APP_PASS="kbla tjpt goaf suwr"
+
+# SSLCommerz Payment Info
+
+STORE_NAME="teststore"
+PAYMENT_API="https://sandbox.sslcommerz.com/gwprocess/v3/api.php"
+VALIDATION_API="https://sandbox.sslcommerz.com/validator/api/validationserverAPI.php"
+STORE_ID="<your_store_id>"
+STORE_PASSWORD="<your_store_password>"
+VALIDATION_URL="<your_validation_url>"
+SUCCESS_URL="<your_success_url>"
+FAILED_URL="<your_failed_url>"
+CANCEL_URL="<your_cancel_url>"
